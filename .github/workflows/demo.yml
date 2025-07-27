@@ -29,7 +29,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: website-build
-          path: distfiles
+          path: dist
 
   deploy:
     needs: build
@@ -40,6 +40,6 @@ jobs:
         with:
           name: website-build
       - name: List files
-        run: ls -la distfiles
+        run: ls -la dist
       - name: Deploy
         run: echo "Deploying..."
