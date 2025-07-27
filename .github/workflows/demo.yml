@@ -40,6 +40,6 @@ jobs:
         with:
           name: website-build
       - name: List files
-        run: ls -la dist
+        run: ls -la
       - name: Deploy
         run: echo "Deploying..."
